@@ -23,24 +23,55 @@ header .dark{
     background-position: center;
 }
 
+
 #proyecto-1{
     background-image: url("assets/imagenes/google-logo.gif");
 }
 
 #proyecto-2{
-    background-image:  url("assets/imagenes/google-logo.gif");
+    background-image:  url("assets/imagenes/web-empresa.gif");
 }
 
 #proyecto-3{
-    background-image:  url("assets/imagenes/google-logo.gif");
+    background-image:  url("assets/imagenes/jew.gif");
 }
 
 #proyecto-4{
-    background-image:  url("assets/imagenes/google-logo.gif");
+    background-image:  url("assets/imagenes/oee.jpg");
 }
 
-.text-shadow-1 { text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25); }
+#proyecto-5{
+    background-image:  url("assets/imagenes/diseño.gif");
+}
+
+#proyecto-6{
+    background-image:  url("assets/imagenes/t&d.gif");
+}
+
+#proyecto-7{
+    background-image:  url("assets/imagenes/kp.gif");
+}
+#proyecto-8{
+    background-image:  url("assets/imagenes/IT.jpg");
+}
+
+#proyecto-9{
+    background-image:  url("assets/imagenes/qu.jpg");
+}
+
+#proyecto-10{
+    background-image:  url("assets/imagenes/manto.gif");
+}
+
+.text-shadow-1 { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); }
+
+.text-shadow-2 { text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); }
 
 .texto-gigante{
     font-size: 100px;
+}
+
+.lt{
+    font-family: rubik;
+    font-size: 40px;
 }

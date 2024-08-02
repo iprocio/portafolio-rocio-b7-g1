@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio  Rocio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portafolio Rocio I</title>
+    <link rel="icon" href="assets/imagenes/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -14,7 +18,7 @@
     <header>
         <nav class="navbar fixed-top navbar-expand-lg text-light dark">
             <div class="container">
-                <a class="navbar-brand text-light" href="#">RocioI</a>
+                <a class="navbar-brand text-light" href="#">Rocio IP</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="bi bi-list"></i>
@@ -28,10 +32,10 @@
                             <a class="nav-link text-light" href="#habilidades">Habilidades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#experiencia">Experiencia</a>
+                            <a class="nav-link text-light" href="#proyectos">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#proyectos">Proyectos</a>
+                            <a class="nav-link text-light" href="#experiencia">Experiencia</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" href="#contacto">Contacto</a>
@@ -48,12 +52,11 @@
         <div class="container col-xxl-8 px-4 py-5 d-flex justify-content-start align-items-center">
             <div class="row flex-lg-row align-items-center g-5 py-5">
                 <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold text-light mb-3">Rocio Ibarrola</h1>
-                    <p class="lead text-white text-shadow-1">IE y desarrolladora web con una sólida trayectoria en la integración de tecnologías y un enfoque en la excelencia operativa. 
-                    Mi objetivo es crear soluciones innovadoras que optimicen el rendimiento e impulsen el crecimiento. </p>
+                    <h1 id="introd" class="display-5 fw-bold text-light mb-3">Rocio Ibarrola</h1>
+                    <p class="lead text-white text-shadow-1">Profesional con una sólida trayectoria en la integración de tecnologías y un enfoque en la excelencia operativa. Mi objetivo es crear soluciones innovadoras que optimicen el rendimiento e impulsen el crecimiento.</p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn btn-info btn-lg px-4 me-md-2">Contáctame</button>
-                        <button type="button" class="btn btn-outline-info btn-lg px-4">Saber más</button>
+                        <a href="#contacto" type="button" class="btn btn-info btn-lg px-4 me-md-2"> Contáctame</a>
+                        <a href="#habilidades" type="button" class="btn btn-outline-info btn-lg px-4">Saber más</a>
                     </div>
                 </div>
             </div>
@@ -61,27 +64,36 @@
         </section>
 
         <section id="habilidades" class="container px-4 py-5">
-            <h2 class="pb-2 border-bottom">HABILIDADES</h2>
+            <h2 class="lt pb-2 border-bottom text-center my-2">HABILIDADES</h2>
             <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 row-cols-md-2">
+
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-info bg-gradient fs-2 mb-3 py-2 px-3 rounded-circle">
+                        <i class="bi bi-pencil-square"></i>
+                    </div>
+                    <h3 class="fs-2 text-body-emphasis text-justify my-2">Diseño UX/UI</h3>
+                    <p>Habilidad en la usabilidad y el diseño centrado en el usuario demostrada a través de mi experiencia en la creación de interfaces web interactivas e intuitivas.</p>
+                </div>
+
 
                 <div class="feature col">
                     <div
                         class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-info bg-gradient fs-2 mb-3 py-2 px-3 rounded-circle">
                         <i class="bi bi-code-square"></i>
                     </div>
-                    <h3 class="fs-2 text-body-emphasis my-2">Desarrollo web</h3>
-                    <p>Conocimientos en HTML, CSS y JS.</p>
+                    <h3 class="fs-2 text-body-emphasis text-justify my-2">Desarrollo web</h3>
+                    <p>Sólido conocimiento en tecnologías clave como HTML, CSS y JavaScript que me permiten construir sitios web responsivos y funcionales.</p>
                 </div>
 
                 <div class="feature col">
                     <div
                         class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-info bg-gradient fs-2 mb-3 py-2 px-3 rounded-circle">
-                        <i class="bi bi-person-gear"></i>
+                        <i class="bi bi-pencil-square"></i>
                     </div>
-                    <h3 class="fs-2 text-body-emphasis my-2">Liderazgo</h3>
-                    <p>Texto</p>
+                    <h3 class="fs-2 text-body-emphasis text-justify my-2">Gestión de proyectos</h3>
+                    <p>Mi experiencia en planificación, ejecución, coordinación de recursos y equipos me permite mantener a todos los integrantes alineados y cumplir con éxito cada proyecto.</p>
                 </div>
-            
 
                 <div class="feature col">
                     <div
@@ -89,43 +101,40 @@
                         <i class="bi bi-lightbulb"></i>
                     </div>
                     <h3 class="fs-2 text-body-emphasis my-2">Resolución de problemas</h3>
-                    <p>Texto</p>
+                    <p>Me adapto rápidamente a nuevas situaciones, lo que me permite generar soluciones innovadoras y toma de decisiones informadas bajo presión.
                 </div>
+
 
                 <div class="feature col">
                     <div
                         class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-info bg-gradient fs-2 mb-3 py-2 px-3 rounded-circle">
-                        <i class="bi bi-calendar-check"></i>
+                        <i class="bi bi-person-gear"></i>
                     </div>
-                    <h3 class="fs-2 text-body-emphasis my-2">Responsabilidad</h3>
-                    <p>Texto</p>
+                    <h3 class="fs-2 text-body-emphasis text-justify my-2">Liderazgo</h3>
+                    <p>Mi enfoque colaborativo fomenta un ambiente de trabajo positivo, donde cada miembro del equipo se siente valorado y comprometido con el éxito compartido.</p>
                 </div>
+
 
                 <div class="feature col">
                     <div
                         class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-info bg-gradient fs-2 mb-3 py-2 px-3 rounded-circle">
                         <i class="bi bi-people"></i>
                     </div>
-                    <h3 class="fs-2 text-body-emphasis my-2">Trabajo en equipo</h3>
-                    <p>CTexto</p>
+                    <h3 class="fs-2 text-body-emphasis text-justify my-2">Trabajo en equipo</h3>
+                    <p>Colaboro de manera efectiva con colegas de diversas áreas y niveles. Contibuyo con mis fortalezas individuales mientras fomento un ambiente de cooperación y respeto.</p>
                 </div>
 
 
-                <div class="feature col">
-                    <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-info bg-gradient fs-2 mb-3 py-2 px-3 rounded-circle">
-                        <i class="bi bi-stopwatch"></i>
-                    </div>
-                    <h3 class="fs-2 text-body-emphasis my-2">Trabajo bajo presión</h3>
-                    <p>Texto</p>
-                </div>
+
+
+
 
 
             </div>
         </section>
 
         <section id="proyectos" class="container px-4 py-5">
-            <h2 class="pb-2 border-bottom">PROYECTOS</h2>
+            <h2 class="lt pb-2 border-bottom text-center my-2">PROYECTOS</h2>
 
             <div class="row row-cols-1 row-cols-lg-2 align-items-stretch g-4 py-5">
 
@@ -148,7 +157,7 @@
                     <div id="proyecto-2" class="proyecto card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
 
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Clon de Google</h3>
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Web de empresa</h3>
                             <ul class="d-flex list-unstyled mt-auto">
                                 <li class="d-flex align-items-center me-3">
                                     <i class="bi bi-code-square"></i>
@@ -163,11 +172,91 @@
                     <div id="proyecto-3" class="proyecto card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
 
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Clon de Google</h3>
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Mi Joyería en línea</h3>
                             <ul class="d-flex list-unstyled mt-auto">
                                 <li class="d-flex align-items-center me-3">
                                     <i class="bi bi-code-square"></i>
                                     <a href="http://" target="_blank" class="ps-3">URL</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+
+                
+                <div class="col">
+                    <div id="proyecto-7" class="proyecto card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
+
+                        <div class="d-flex flex-column h-100 p-5 pb-3">|
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-white text-shadow-2">Panel Operativo</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3">
+                                    <i class="bi bi-pencil-fill"></i>
+                                    <a href="http://" target="_blank" class="ps-3">Saber más</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+               
+                <div class="col">
+                    <div id="proyecto-5" class="proyecto card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
+
+                        <div class="d-flex flex-column h-100 p-5 pb-3">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-black text-shadow-2">Control de certificación</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3">
+                                    <i class="bi bi-pencil-fill"></i>
+                                    <a href="http://" target="_blank" class="ps-3">Saber más</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div id="proyecto-10" class="proyecto card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
+
+                        <div class="d-flex flex-column h-100 p-5 pb-3">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-black text-shadow-2">Plataforma de Mantenimiento</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3">
+                                    <i class="bi bi-pencil-fill"></i>
+                                    <a href="http://" target="_blank" class="ps-3">Saber más</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div id="proyecto-6" class="proyecto card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
+
+                        <div class="d-flex flex-column h-100 p-5 pb-3">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-black text-shadow-2">Plataforma de entrenamiento</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3">
+                                    <i class="bi bi-pencil-fill"></i>
+                                    <a href="http://" target="_blank" class="ps-3">Saber más</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col">
+                    <div id="proyecto-8" class="proyecto card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
+
+                        <div class="d-flex flex-column h-100 p-5 pb-3">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-black text-shadow-2">Management Information System</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3">
+                                    <i class="bi bi-pencil-fill"></i>
+                                    <a href="http://" target="_blank" class="ps-3">Saber más</a>
                                 </li>
                             </ul>
                         </div>
@@ -177,47 +266,100 @@
                 <div class="col">
                     <div id="proyecto-4" class="proyecto card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
 
-                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Clon de Google</h3>
+                        <div class="d-flex flex-column h-100 p-5 pb-3">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-black text-shadow-2">Control de Producción</h3>
                             <ul class="d-flex list-unstyled mt-auto">
                                 <li class="d-flex align-items-center me-3">
-                                    <i class="bi bi-code-square"></i>
-                                    <a href="http://" target="_blank" class="ps-3">URL</a>
+                                    <i class="bi bi-pencil-fill"></i>
+                                    <a href="http://" target="_blank" class="ps-3">Saber más</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div id="proyecto-9" class="proyecto card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
+
+                        <div class="d-flex flex-column h-100 p-5 pb-3">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-black text-shadow-2">Plataforma de Calidad</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3">
+                                    <i class="bi bi-pencil-fill"></i>
+                                    <a href="http://" target="_blank" class="ps-3">Saber más</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
+
+
+
         </div>
         </section>
         
-        <section id="testimonios" class="container px-4 py-5">
-            <h2 class="pb-2 border-bottom">EXPERIENCIA LABORAL</h2>
-
-            <div id="myCarousel" class="carousel carousel-dark mb-6 carousel-fade" data-bs-theme="dark" data-bs-ride="carousel">
-                <div class="carousel-inner px-4 py-5">
+        <section id="experiencia" class="container px-4 py-5">
+                <h2 class="lt pb-2 border-bottom text-center my-2">EXPERIENCIA</h2>
+                <h5 class="text-center mt-3">Mi experiencia abarca una amplia gama de industrias, como:</h5>
+        </section>
+     
+            <div id="experience" class="pb-5">
+            <div id="myCarousel" class="carousel slide carousel-dark mb-6 carousel-fade" data-bs-theme="dark" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    
                     <div class="carousel-item active">
                         <article class="container text-center">
-                            <img class="rounded-4" src="assets/imagenes/banner-digital-transformation.jpg" height="150px" alt="">
-                            <h3>RH</h3>
-                            <p>Experiencia de 4 años en Recursos Humanos</p>
+                            <h3>Tecnología y Servicios de Información</h3>
+                                <img class="rounded-4 py-2" src="assets/imagenes/banner-digital-transformation.jpg" height="200" alt="Industria de Tecnología y Servicios de Información">
+                            <h4>1 año</h4>
+                            <p>Soluciones tecnológicas y consultoría.</p>
                         </article>
                     </div>
 
                     <div class="carousel-item">
                         <article class="container text-center">
-                            <img class="rounded-4" src="assets/imagenes/banner-digital-transformation.jpg" height="150px" alt="">
-                            <h3>Operaciones</h3>
-                            <p>Experiencia de 5 años en Operación</p>
+                            <h3>Automotriz</h3>
+                            <img class="rounded-4 py-2" src="assets/imagenes/auto.jpg" height="200" alt="Industria Automotriz">
+                            <h4>+5 años</h4>
+                            <p>Operaciones y Gestión de Proyectos.</p>
                         </article>
                     </div>
 
                     <div class="carousel-item">
                         <article class="container text-center">
-                            <img class="rounded-4" src="assets/imagenes/banner-digital-transformation.jpg" height="150px" alt="">
-                            <h3></h3>
-                            <p>Experiencia de 5 años en Operación</p>
+                            <h3>Industria Química</h3>
+                            <img class="rounded-4 py-2" src="assets/imagenes/quimica.jpg" height="200" alt="ndustria Química">
+                            <h4>1 año</h4>
+                            <p>Mejora de Procesos.</p>
+                        </article>
+                    </div>
+
+                    <div class="carousel-item">
+                        <article class="container text-center">
+                            <h3>Manufactura</h3>
+                            <img class="rounded-4 py-2" src="assets/imagenes/manu.webp" height="200" alt="Industria de Manufactura">
+                            <h4>6 meses</h4>
+                            <p>Calidad</p>
+                        </article>
+                    </div>
+
+                    
+                    <div class="carousel-item">
+                        <article class="container text-center">
+                            <h3>Banca</h3>
+                            <img class="rounded-4 py-2" src="assets/imagenes/banca.jpg" height="200" alt="Industria de la Banca">
+                            <h4>3 meses</h4>
+                            <p>Customer Service</p>
+                        </article>
+                    </div>
+
+                    <div class="carousel-item">
+                        <article class="container text-center">
+                            <h3>Textil</h3>
+                            <img class="rounded-4 py-2" src="assets/imagenes/textil.jpg" height="200" alt="Industria Textil">
+                            <h4>3 meses</h4>
+                            <p>Mejora continua</p>
                         </article>
                     </div>
 
@@ -231,19 +373,26 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-        </section>
+        </div>
+
 
 
 
     </main>
 
 
-    <footer id="contacto" class="py-3 mt-1 bg-black" data-bs-theme="dark" >
+    <footer id="contacto" class="py-3 mt-1 bg-black" data-bs-theme="dark">
         <p class="mt-5 text-info text-center fs-1">
             <i class="bi bi-code-slash"></i>
             </p>
-            <h4 class="text-white text-center mb-5">"La mejora continua es mejor que la perfección tardía." <br>— Mark Zuckerberg</h4>
+            <h4 id="frase" class="text-white text-center mb-5">"La mejora continua es mejor que la perfección tardía." <br>— Mark Zuckerberg</h4>
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+
+            <li class="nav-item">
+                <a href="mailto:ribarrolap@gmail.com" target="_blank" rel="noreferrer" rel="noopener" class="nav-link px-2 text-info fs-4">
+                <i class="bi bi-envelope-at-fill"></i></a>
+            </li>
+
             <li class="nav-item">
                 <a href="https://github.com/iprocio" target="_blank" rel="noreferrer" rel="noopener" class="nav-link px-2 text-info fs-4">
                 <i class="bi bi-github"></i></a>
@@ -260,17 +409,16 @@
             </li>
 
             <li class="nav-item">
-                <a href="https://www.threads.net/@rocioibarrolap" target="_blank" rel="noreferrer" rel="noopener" class="nav-link px-2 text-info fs-4">
-                <i class="bi bi-threads"></i></a>
-            </li>
-
-
-            <li class="nav-item">
                 <a href="https://facebook.com/rocio-ibarrola-p" target="_blank" rel="noreferrer" rel="noopener" class="nav-link px-2 text-info fs-4">
                 <i class="bi bi-facebook"></i></a>
             </li>
 
             
+            <li class="nav-item">
+                <a href="https://www.threads.net/@rocioibarrolap" target="_blank" rel="noreferrer" rel="noopener" class="nav-link px-2 text-info fs-4">
+                <i class="bi bi-threads"></i></a>
+            </li>
+
         </ul>
         <p class="text-center text-light">© 2024 CREADO POR Rocio Ibarrola</p>
     </footer>
@@ -278,6 +426,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+        <script src="script.js"></script>
 </body>
 
 </html>

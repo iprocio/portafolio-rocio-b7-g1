@@ -15,4 +15,4 @@ Este proyecto es un portafolio personal diseñado para mostrar y poner en práct
 * Diseño Responsivo: La página se adapta a diferentes tamaños de pantalla, garantizando una experiencia de usuario óptima en dispositivos móviles, tabletas y escritorios.
 * Presentación Personal: Incluye una sección detallada sobre la autora del proyecto, destacando habilidades, experiencia y contacto.
 
-[Proyecto desplegado (https://rocioibarrola.netlify.app/)](https://rocioibarrola.netlify.app/)
+[Proyecto desplegado [Portafolio.RocioIbarrola](https://rocioibarrola.netlify.app/)

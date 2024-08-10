@@ -17,6 +17,20 @@ header .dark{
     background-position: center;
 }
 
+#section-to-show{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/imagenes/line.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2em;
+    color: aliceblue;
+}
+
 .proyecto{
     background-size: cover;
     background-repeat: no-repeat;
@@ -75,3 +89,32 @@ header .dark{
     font-family: rubik;
     font-size: 40px;
 }
+
+.saber-mas{
+    font-size: 1.5em;
+}
+
+.saber-mas:hover{
+    font-size: 2.1em;
+    color: blue;
+}
+
+.saber-mas-1{
+    font-size: 1.5em;
+    color: white;
+}
+
+.saber-mas-1:hover{
+    font-size: 2.1em;
+    color: blue;
+}
+
+.purl{
+    color: aliceblue;
+}
+
+.custom-modal-img {
+    width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
+    max-width: 400px; /* Establece un ancho máximo para la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }

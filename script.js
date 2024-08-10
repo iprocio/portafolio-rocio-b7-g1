@@ -32,3 +32,4 @@ typewriterFrase
   .pauseFor(1500)
   .deleteAll()
   .start();
+

@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Damion&family=Junge&family=Metal&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Petit+Formal+Script&family=Rubik:ital,wght@0,300..900;1,300..900&family=Tenor+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -26,7 +29,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page" href="#">Acerca de mí</a>
+                            <a class="nav-link active text-light" aria-current="page" href="#section-to-show" id="nave-link">Acerca de mí</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" href="#habilidades">Habilidades</a>
@@ -62,6 +65,18 @@
             </div>
         </div>
         </section>
+
+<!--
+        <section id="section-to-show" class="hidden">
+            <div   class="container col-xxl-12 px-4 py-5 d-flex justify-content-center align-items-center">
+                    <div class="col-lg-8">
+                            <p class="text-shadow-1"><strong> Mi nombre es Rocio. Soy una diseñadora y desarrolladora web, radico en México.</strong></p>
+                           <p> Trabajo como freelance y desarrollador front-end. Siempre he sido alguien que tiene un lado creativo y otro lógico. Comencé diseñando plataformas y soluciones digitales, después tomé un curso de front-end y me di cuenta de que sería la opción perfecta. Podría usar mi lado creativo para diseñar y mi lado lógico para programar. Como beneficio adicional, ser diseñador y desarrollador me permite asegurarme de que no se pierda ningún detalle en la transición.</p>
+                </div>
+            </div>
+            </section>
+-->
+
 
         <section id="habilidades" class="container px-4 py-5">
             <h2 class="lt pb-2 border-bottom text-center my-2">HABILIDADES</h2>
@@ -146,7 +161,7 @@
                             <ul class="d-flex list-unstyled mt-auto">
                                 <li class="d-flex align-items-center me-3">
                                     <i class="bi bi-code-square"></i>
-                                    <a href="https://iprocio.github.io/clon-google/" target="_blank" rel="noopener" rel="noreferrer" class="ps-3">URL</a>
+                                    <a href="https://iprocio.github.io/clon-google/" target="_blank" rel="noopener" rel="noreferrer" class="ps-3 purl saber-mas">URL</a>
                                 </li>
                             </ul>
                         </div>
@@ -161,7 +176,7 @@
                             <ul class="d-flex list-unstyled mt-auto">
                                 <li class="d-flex align-items-center me-3">
                                     <i class="bi bi-code-square"></i>
-                                    <a href="https://iprocio.github.io/web-de-empresa/" target="_blank" rel="noopener" rel="noreferrer" class="ps-3">URL</a>
+                                    <a href="https://iprocio.github.io/web-de-empresa/" target="_blank" rel="noopener" rel="noreferrer" class="ps-3 purl saber-mas">URL</a>
                                 </li>
                             </ul>
                         </div>
@@ -176,7 +191,7 @@
                             <ul class="d-flex list-unstyled mt-auto">
                                 <li class="d-flex align-items-center me-3">
                                     <i class="bi bi-code-square"></i>
-                                    <a href="http://vecchiojoyeria.netlify.app" target="_blank" rel="noopener" rel="noreferrer" class="ps-3">URL</a>
+                                    <a href="http://vecchiojoyeria.netlify.app" target="_blank" rel="noopener" rel="noreferrer" class="ps-3 purl saber-mas">URL</a>
                                 </li>
                             </ul>
                         </div>
@@ -188,55 +203,130 @@
 
                         <div class="d-flex flex-column h-100 p-5 pb-3">
                             <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-black text-shadow-2">Plataforma de Producción</h3>
-                            <i class="bi bi-plus-circle"></i>
-                            <!--
-                                                        <ul class="d-flex list-unstyled mt-auto">
-                                <li class="d-flex align-items-center me-3">
-                                    <i class="bi bi-pencil-fill"></i>
-                                    <a href="http://" target="_blank" class="ps-3">Saber más</a>
-                                </li>
-                            </ul>
-                        -->
+
+                              <i class="bi bi-eye-fill saber-mas" data-bs-toggle="modal" data-bs-target="#project1"></i>
+
                         </div>
                     </div>
                 </div>
         
+                <!--PROYECTOS DETALLE-->
+
+<div id="project1" style="display:none;" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">CMS (Content Management System)</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <img class="mx-auto d-block img-fluid custom-modal-img" src="assets/imagenes/proj1.png" alt="plataforma-de-produccion-imagen">
+          <h2 class="text-center"><strong>Plataforma de Producción</strong></h2>
+          <p>Interfaz intuitiva para dar más transparencia del estado de manufactura de la producción a los skateholders. El proyecto incluye algunos módulos integrados con SAP, monitoreo de estatus en tiempo real y descarga de reportes.</p>
+          <p><i class="text-success bi bi-check-circle-fill"></i> Se llevaron a cabo 4 sprints cada uno con 1 semana de duración.</p>
+          <p><i class="text-success bi bi-check-circle-fill"></i> El objetivo fue comenzar con bocetos de baja fidelidad hasta crear los wireframes de alta fidelidad, para posterior desarrollo web.</p>
+          <p><i class="text-success bi bi-check-circle-fill"></i> Se realizó la implementación y depuración final del sistema con duración de 1 mes.</p>
+        <h4><em><strong>Resultados:</strong></em></h4>
+         <h4 class="text-start text-sucess-emphasis"><i class="bi bi-people-fill"></i> 3.5K usuarios</h4>
+         <h4 class="text-start text-sucess-emphasis"><i class="bi bi-geo-alt-fill"></i> 4 plantas en MX & UK</h4>
+         <h4 class=" text-start text-sucess-emphasis"><i class="bi bi-currency-euro"></i> 1 Mio <em>ahorro anual</em></h4>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
                 <div class="col">
                     <div id="proyecto-6" class="proyecto card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
 
                         <div class="d-flex flex-column h-100 p-5 pb-3">
                             <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-black text-shadow-2">Plataforma de Entrenamiento</h3>
-                            <i class="bi bi-plus-circle"></i>
-                            <!--
-                            <ul class="d-flex list-unstyled mt-auto">
-                                <li class="d-flex align-items-center me-3">
-                                    <i class="bi bi-pencil-fill"></i>
-                                    <a href="http://" target="_blank" class="ps-3">Saber más</a>
-                                </li>
-                            </ul>
-                        -->
+                            <i class="bi bi-eye-fill saber-mas" data-bs-toggle="modal" data-bs-target="#project2"></i>
                         </div>
                     </div>
                 </div>
+
+                
+                <!--PROYECTOS DETALLE-->
                
+                <div id="project2" style="display:none;" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">CMS (Content Management System)</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <img class="mx-auto d-block img-fluid custom-modal-img" src="assets/imagenes/proj2.png" alt="plataforma-de-entrenamiento-imagen">
+                          <h2 class="text-center"><strong>Plataforma de Entrenamiento</strong></h2>
+                          <p>Plataforma que digitaliza los procesos de entrenamiento y desarrollo del personal. Se realizan evaluaciones 24/7 y se generan evidencias digitales de los cursos/entrenamientos aprobados.</p>
+                          <p><i class="text-success bi bi-check-circle-fill"></i> La solución permite enfocar los recursos en estrategias de la compañía.</p>
+                          <p><i class="text-success bi bi-check-circle-fill"></i> Disminuye los errores de validación y elimina cuellos de botella al reducir la intervención del personal en el proceso.</p>
+                          <p><i class="text-success bi bi-check-circle-fill"></i> Se realizan cambios inmediatos en las evaluaciones y actualizaciones de cursos o pruebas.</p>
+                          <h4><em>Características:</em></h4>
+                          <h6 class="text-start text-sucess-emphasis"><i class="bi bi-file-text"></i> Registros por empleado</h6>
+                          <h6 class="text-start text-sucess-emphasis"><i class="bi bi-arrow-left-right"></i> Flujo estandarizado del procedimiento</h6>
+                          <h6 class="text-start text-sucess-emphasis"><i class="bi bi-hourglass-split"></i> Reducción de procesos burocráticos</h6>
+                          <h6 class="text-start text-sucess-emphasis"><i class="bi bi-paperclip"></i> Reportes y evidencias estandarizadas</h6>
+                          <br>
+                          <h4><em><strong>Resultados:</strong></em></h4>
+                          <h4 class="text-start text-sucess-emphasis"><i class="bi bi-people-fill"></i> 6K usuarios</h4>
+                          <h4 class="text-start text-sucess-emphasis"><i class="bi bi-geo-alt-fill"></i> 7 plantas en MX, USA & CA</h4>
+                          <h4 class=" text-start text-sucess-emphasis"><i class="bi bi-currency-dollar"></i> 2.4 Mio <em>ahorro anual</em></h4>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
 
                 <div class="col">
                     <div id="proyecto-10" class="proyecto card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
 
                         <div class="d-flex flex-column h-100 p-5 pb-3">
                             <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-black text-shadow-2">Plataforma de Mantenimiento</h3>
-                            <i class="bi bi-plus-circle"></i>
-                            <!--
-                            <ul class="d-flex list-unstyled mt-auto">
-                                <li class="d-flex align-items-center me-3">
-                                    <i class="bi bi-pencil-fill"></i>
-                                    <a href="http://" target="_blank" class="ps-3">Saber más</a>
-                                </li>
-                            </ul>
-                        -->
+                            <i class="bi bi-eye-fill saber-mas" data-bs-toggle="modal" data-bs-target="#project3"></i>
                         </div>
                     </div>
                 </div>
+
+                  
+                <!--PROYECTOS DETALLE-->
+               
+                <div id="project3" style="display:none;" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">CMS (Content Management System)</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <img  class="mx-auto d-block img-fluid custom-modal-img" src="assets/imagenes/proj3.jpg" alt="plataforma-de-mantenimiento-imagen">
+                          <h2 class="text-center"><strong>Plataforma de Mantenimiento</strong></h2>
+                          <p>Esta plataforma de mantenimiento facilita la gestión de los mantenimientos autónomos necesarios para cada máquina, organizados en intervalos diarios, semanales y mensuales. Ofrece reportes y gráficos detallados para mostrar el progreso en tiempo real.</p>
+                          <p><i class="text-success bi bi-check-circle-fill"></i> La información está sincronizada con SAP para una mayor precisión</p>
+                          <p><i class="text-success bi bi-check-circle-fill"></i> Digitalización de instrucciones para optimizar la ayuda visual, mejorando así la eficiencia en la comprensión y ejecución de los procesos</p>
+                          <p><i class="text-success bi bi-check-circle-fill"></i> Captura de imágenes en tiempo real de hallazgos o fallos en maquinaria para su pronta reparación y seguimiento</p>
+                          <h4><em><strong>Resultados:</strong></em></h4>
+                          <h4 class="text-start text-sucess-emphasis"><i class="bi bi-people-fill"></i> 2K usuarios</h4>
+                          <h4 class="text-start text-sucess-emphasis"><i class="bi bi-geo-alt-fill"></i> 3 plantas en MX</h4>
+                          <h4 class=" text-start text-sucess-emphasis"><i class="bi bi-currency-dollar"></i> 3 Mio <em>ahorro anual</em></h4>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
 
         
@@ -246,18 +336,41 @@
 
                         <div class="d-flex flex-column h-100 p-5 pb-3">
                             <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-black text-shadow-2">Plataforma de Calidad</h3>
-                            <i class="bi bi-plus-circle"></i>
-                            <!--
-                            <ul class="d-flex list-unstyled mt-auto">
-                                <li class="d-flex align-items-center me-3">
-                                    <i class="bi bi-pencil-fill"></i>
-                                    <a href="http://" target="_blank" class="ps-3">Saber más</a>
-                                </li>
-                            </ul>
-                        -->
+                            <i class="bi bi-eye-fill saber-mas" data-bs-toggle="modal" data-bs-target="#project4"></i>
                         </div>
                     </div>
                 </div>
+
+
+                <!--PROYECTOS DETALLE-->
+               
+                <div id="project4" style="display:none;" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">CMS (Content Management System)</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <img class="mx-auto d-block img-fluid custom-modal-img" src="assets/imagenes/proj4.jpg" alt="plataforma-de-calidad-imagen">
+                          <h2 class="text-center"><strong>Plataforma de Calidad</strong></h2>
+                          <p>Plataforma de calidad que genera solicitudes para la aprobación de retrabajos o desvíos de calidad. Permite la creación de flujos de trabajo (workflows) que facilitan a los altos mandos la revisión resumida de la información.</p>
+                          <p><i class="text-success bi bi-check-circle-fill"></i> Disminución de burocracia</p>
+                          <p><i class="text-success bi bi-check-circle-fill"></i> Eliminación del tiempo muerto en la búsqueda de aprobaciones, optimizando el proceso y acelerando la toma de decisiones</p>
+                          <p><i class="text-success bi bi-check-circle-fill"></i> Actualizaciones en línea</p>
+                          <h4><em><strong>Resultados:</strong></em></h4>
+                          <h4 class="text-start text-sucess-emphasis"><i class="bi bi-people-fill"></i> 1K usuarios</h4>
+                          <h4 class="text-start text-sucess-emphasis"><i class="bi bi-geo-alt-fill"></i> 3 plantas en MX</h4>
+                          <h4 class=" text-start text-sucess-emphasis"><i class="bi bi-currency-dollar"></i> 0.5 Mio <em>ahorro anual</em></h4>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
 
                 
                 <div class="col">
@@ -265,57 +378,116 @@
 
                         <div class="d-flex flex-column h-100 p-5 pb-3">
                             <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-black text-shadow-2">Control de certificación</h3>
-                            <i class="bi bi-plus-circle"></i>
-                            <!--
-                            <ul class="d-flex list-unstyled mt-auto">
-                                <li class="d-flex align-items-center me-3">
-                                    <i class="bi bi-pencil-fill"></i>
-                                    <a href="http://" target="_blank" class="ps-3">Saber más</a>
-                                </li>
-                            </ul>
-                        -->
+                            <i class="bi bi-eye-fill saber-mas" data-bs-toggle="modal" data-bs-target="#project5"></i>
                         </div>
                     </div>
                 </div>
+
+
+                                <!--PROYECTOS DETALLE-->
+               
+                                <div id="project5" style="display:none;" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h1 class="modal-title fs-5" id="exampleModalLabel">Web Application</h1>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                        <img class="mx-auto d-block img-fluid custom-modal-img" src="assets/imagenes/proj5.png" alt="plataforma-de-certificacion-imagen">
+                                          <h2 class="text-center"><strong>Control de certificación</strong></h2>
+                                          <p>Aplicación web que facilita la certificación del entrenamiento del personal operativo. Permite realizar evaluaciones y aprobaciones de manera digital, además de generar evidencia que asegura el cumplimiento de normas y requisitos de la industria automotriz.</p>
+                                          <p><i class="text-success bi bi-check-circle-fill"></i> Aprobaciones electrónicas</p>
+                                          <p><i class="text-success bi bi-check-circle-fill"></i> Eliminación de errores al capturar información de forma manual</p>
+                                          <p><i class="text-success bi bi-check-circle-fill"></i> Incrementa la colaboración interna</p>
+                                          <h4><em><strong>Resultados:</strong></em></h4>
+                                          <h4 class="text-start text-sucess-emphasis"><i class="bi bi-people-fill"></i> 3.2K usuarios</h4>
+                                          <h4 class="text-start text-sucess-emphasis"><i class="bi bi-geo-alt-fill"></i> 9 plantas en USA, MX & Brasil</h4>
+                                          <h4 class=" text-start text-sucess-emphasis"><i class="bi bi-currency-dollar"></i> 3.5 Mio <em>ahorro anual</em></h4>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+
 
                 <div class="col">
                     <div id="proyecto-8" class="proyecto card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
 
                         <div class="d-flex flex-column h-100 p-5 pb-3">
                             <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-black text-shadow-2">MIS: Management Information System</h3>
-                            <i class="bi bi-plus-circle text-white"></i>
-                            <!--
-                            <ul class="d-flex list-unstyled mt-auto">
-                                <li class="d-flex align-items-center me-3">
-                                    <i class="bi bi-pencil-fill"></i>
-                                    <a href="http://" target="_blank" class="ps-3">Saber más</a>
-                                </li>
-                            </ul>
-                        -->
+                            <i class="bi bi-eye-fill saber-mas-1" data-bs-toggle="modal" data-bs-target="#project6"></i>
                         </div>
                     </div>
                 </div>
+
+
+                                <!--PROYECTOS DETALLE-->
+               
+                                <div id="project6" style="display:none;" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h1 class="modal-title fs-5" id="exampleModalLabel">Web Application</h1>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                        <img class="mx-auto d-block img-fluid custom-modal-img" src="assets/imagenes/proj6.jpg" alt="plataforma-MIS-imagen">
+                                          <h2 class="text-center"><strong>MIS: Management Information System</strong></h2>
+                                          <p></p>
+                                          <p><i class="text-success bi bi-check-circle-fill"></i> Sistema web que permite monitorear los KPI más relevantes de la planta</p>
+                                          <p><i class="text-success bi bi-check-circle-fill"></i> Seguimiento de tendencias anuales, mensuales y semanales</p>
+                                          <p><i class="text-success bi bi-check-circle-fill"></i> Lista de acciones integrada para mejorar los resultados de cada departamento</p>
+                                       
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
 
 
                 <div class="col">
                     <div id="proyecto-7" class="proyecto card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
 
                         <div class="d-flex flex-column h-100 p-5 pb-3">|
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-white text-shadow-2">PT Management Board</h3>
-                            <i class="bi bi-plus-circle text-white"></i>
-                            <!--
-                            <ul class="d-flex list-unstyled mt-auto">
-                                <li class="d-flex align-items-center me-3">
-                                    <i class="bi bi-three-dots"></i>
-                                    <a href="http://" target="_blank" class="ps-3">Saber más</a>
-                                </li>
-                            </ul>
-                        -->
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-white text-shadow-2">PT Board</h3>
+                            <i class="bi bi-eye-fill saber-mas-1" data-bs-toggle="modal" data-bs-target="#project7"></i>
+                            
                         </div>
                     </div>
                 </div>
 
 
+                 <!--PROYECTOS DETALLE-->
+               
+                 <div id="project7" style="display:none;" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Web Application</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <img class="mx-auto d-block img-fluid custom-modal-img" src="assets/imagenes/proj7.png" alt="plataforma-PT-imagen">
+                          <h2 class="text-center"><strong>PT Board Management</strong></h2>
+                          <p>Plataforma que permite visualizar los resultados de los KPIs más relevantes para la operación, incluyendo gráficos de tendencias y acciones concretas para mejorar los resultados</p>
+                          <p><i class="text-success bi bi-check-circle-fill"></i> Niveles de acceso disponibles</p>
+                          <p><i class="text-success bi bi-check-circle-fill"></i> Análisis de tendencias anuales, mensuales, semanales y diarias</p>
+                          <p><i class="text-success bi bi-check-circle-fill"></i> Lista de acciones integrada para mejorar los resultados</p>
+                       
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
 
         </div>
@@ -396,6 +568,10 @@
                 </button>
             </div>
         </div>
+
+
+
+
 
 
 

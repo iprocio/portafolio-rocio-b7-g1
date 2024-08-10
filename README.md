@@ -1,8 +1,9 @@
-# Mi portafolio de actividades TECHNOLOCHICAS PRO
+# Mi portafolio personal
 
 Descripción del Proyecto:
 
-Este proyecto es un portafolio personal diseñado para mostrar y poner en práctica las habilidades adquiridas durante el bootcamp de desarrollo frontend de Technolochicas PRO. El portafolio destaca la capacidad para crear sitios web responsivos y visualmente atractivos utilizando tecnologías web modernas.
+Este proyecto es un portafolio personal diseñado para mostrar y poner en práctica las habilidades adquiridas de desarrollo frontend.
+El portafolio destaca la capacidad para crear sitios web responsivos y visualmente atractivos utilizando tecnologías web modernas.
 
 ## Tecnologías Utilizadas
 * HTML: Para la estructura y el contenido de la página.
